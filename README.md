@@ -45,24 +45,17 @@ cd RAG-with-Llama3.2
 
 2. Create a Virtual Environment
 
-Using Anaconda
-
 Follow these steps to create a virtual environment using Anaconda:
 
-	1.	Open the Anaconda Prompt.
-	2.	Create a new environment:
-
-conda create --name rag_app python=3.10
-
-	3.	Activate the newly created environment:
-
-conda activate rag_app
+	1.	Open terminal .
+	2.	Create a new environment: conda create --name rag_app python=3.10
+	3.	Activate the newly created environment: conda activate rag_app
 
 3. Install Dependencies
 
 pip install -r requirements.txt
 
-4. Pull model llama3.2 and run Qdrant with docker local
+4. Pull model llama3.2 and run Qdrant with docker local:
 	1. ollama pull llama3.2:3b
 	2. docker pull qdrant/qdrant
 	3. docker run -p 6333:6333 qdrant/qdrant
